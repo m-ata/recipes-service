@@ -1,0 +1,53 @@
+env:
+  browser: false
+  es6: true
+  node: true
+parser: '@typescript-eslint/parser'
+plugins:
+  - '@typescript-eslint'
+extends:
+  ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier']
+parserOptions:
+  ecmaVersion: 2020
+  requireConfigFile: false
+  sourceType: 'module'
+rules:
+  brace-style:
+    - warn
+    - 1tbs
+  curly: off
+  eol-last:
+    - error
+    - always
+  id-length: 0
+  max-lines: 0
+  max-params:
+    - error
+    - 4
+  no-duplicate-imports: error
+  no-eq-null: error
+  eqeqeq:
+    - error
+    - smart
+  no-eval: error
+  no-implied-eval: error
+  no-invalid-this: error
+  no-shadow: 0
+  no-undefined: warn
+  no-empty-function: error
+  no-param-reassign: warn
+  no-unused-expressions: error
+  no-unused-vars: error
+  no-useless-concat: warn
+  no-label-var: warn
+  no-use-before-define: error
+  no-const-assign: error
+  no-useless-rename: warn
+  no-warning-comments:
+    - warn
+    - location: anywhere
+      terms:
+        - todo
+        - fixme
+  prefer-promise-reject-errors: error
+  semi: error

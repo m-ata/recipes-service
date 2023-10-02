@@ -1,0 +1,10 @@
+trailingComma: 'all'
+semi: false
+singleQuote: true
+bracketSpacing: true
+endOfLine: 'auto'
+overrides:
+  - files: '*.ts'
+    options:
+      semi: true
+      parser: 'typescript'
